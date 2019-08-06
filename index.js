@@ -440,7 +440,7 @@ export default class Carousel extends Component {
     }
 
     _onScrollEndDragThrottled (event) {
-        if (this._scrollview) {
+        if (this._scrollview && this._onScrollEnd) {
             this._onScrollEnd(event);
         }
     }
